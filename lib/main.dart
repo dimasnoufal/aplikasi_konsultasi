@@ -1,20 +1,9 @@
+import 'package:aplikasi_konsultasi/general_observer.dart';
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:aplikasi_konsultasi/main_app.dart';
 
 void main() {
+  Bloc.observer = GeneralObserver();
   runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
 }
