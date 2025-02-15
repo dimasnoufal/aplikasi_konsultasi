@@ -8,7 +8,8 @@ double defaultRadius = 5.0;
 const Color kPrimaryColor = Color(0xFF38A1FF);
 const Color kBlackColor = Color(0xFF000000);
 const Color kWhiteColor = Color(0xFFFFFFFF);
-const Color kGreyColor = Color(0xFF9698A9);
+const Color kDarkGreyColor = Color(0xFF707974);
+const Color kLightGreyColor = Color(0xFF9698A9);
 const Color kGreenColor = Color(0xFF0EC3AE);
 const Color kRedColor = Color(0xfFFEB70A5);
 const Color kBackgroundColor = Color(0xFFFAFAFA);
@@ -23,8 +24,12 @@ TextStyle whiteTextStyle = google_fonts.GoogleFonts.montserrat(
   color: kWhiteColor,
 );
 
-TextStyle greyTextStyle = google_fonts.GoogleFonts.montserrat(
-  color: kGreyColor,
+TextStyle darkGreyTextStyle = google_fonts.GoogleFonts.montserrat(
+  color: kDarkGreyColor,
+);
+
+TextStyle lightGreyTextStyle = google_fonts.GoogleFonts.montserrat(
+  color: kLightGreyColor,
 );
 
 TextStyle greenTextStyle = google_fonts.GoogleFonts.montserrat(

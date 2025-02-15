@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   bloc: ^9.0.0
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_bloc: ^9.0.0
@@ -25,4 +26,5 @@ flutter:
   uses-material-design: true
 
   assets:
-  - assets/
+  - assets/logo/
+  - assets/on_boarding/

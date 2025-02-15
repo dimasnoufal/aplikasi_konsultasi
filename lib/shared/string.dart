@@ -1,3 +1,9 @@
+List<String> imageOnBoarding = [
+  'assets/on_boarding/on_boarding1.png',
+  'assets/on_boarding/on_boarding2.png',
+  'assets/on_boarding/on_boarding3.png',
+];
+
 List<String> titlesOnBoarding = [
   "Ceritakan Masalahmu",
   "Konsultasi Dengan Kami",

@@ -1,3 +1,4 @@
+import 'package:aplikasi_konsultasi/shared/theme.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
@@ -5,16 +6,29 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text("Splash Page"),
-            ],
+    return Scaffold(
+      backgroundColor: kWhiteColor,
+      body: Stack(
+        children: [
+          Center(
+            child: Container(
+              height: 250,
+              width: 250,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/logo/logo.png'),
+                ),
+              ),
+            ),
           ),
-        ),
+          Container(
+            alignment: Alignment.bottomCenter,
+            margin: EdgeInsets.only(bottom: defaultHorizontalMargin),
+            child: Text(
+              'Create by Dimasnoufal',
+            ),
+          ),
+        ],
       ),
     );
   }
